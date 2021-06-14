@@ -1,0 +1,10 @@
+/.idea
+/target/
+/SB-Nft.iml
+/Demo-Latest-Gatling.iml
+.settings/
+.project
+.classpath
+gatling-plugin-master/
+/gc.log
+gc.log
