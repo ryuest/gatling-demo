@@ -51,8 +51,8 @@ trait SimulationSettingsTrait {
   def httpProtocol = http
     .warmUp("http://www.google.com")
 
-    .proxy(Proxy("localhost", 8888)
-      .httpsPort(8888))
+  //  .proxy(Proxy("localhost", 8888)
+  //    .httpsPort(8888))
 
     .inferHtmlResources(
       WhiteList(Seq("http[s]?://.*/test.staticcache.org/.*" , "http[s]?://.*/test2.staticcache.org/.*")),
