@@ -35,6 +35,7 @@ object HomePage {
       .check( regex( "org.apache.struts.action.TOKEN=(.*?)\"" ).saveAs( "action_token" ) )
       .check( regex( "org.apache.struts.taglib.html.TOKEN\" value=(.*?)\"" ).saveAs( "html_token" ) )
     )
+
       .exec( session => {
         LoggerFactory.getLogger( "action_token: " + session( "action_token" ).as[String] ).info( "logging info" )
         LoggerFactory.getLogger( "html_token: " + session( "html_token" ).as[String] ).info( "logging info" )
